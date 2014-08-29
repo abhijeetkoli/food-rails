@@ -1,0 +1,11 @@
+id,description,created_at,updated_at
+1,"Analytical or derived from analytical","2014-05-13 11:35:54","2014-05-13 11:35:54"
+2,Imputed,"2014-05-13 11:35:54","2014-05-13 11:35:54"
+3,"Value manufacturer based label claim for added nutrients","2014-05-13 11:35:54","2014-05-13 11:35:54"
+4,"Aggregated data involving combinations of source codes 1 &12","2014-05-13 11:35:54","2014-05-13 11:35:54"
+5,"Assumed zero","2014-05-13 11:35:54","2014-05-13 11:35:54"
+6,"Calculated from nutrient label by NDL","2014-05-13 11:35:54","2014-05-13 11:35:54"
+7,"Calculated by manufacturer, not adjusted or rounded for NLEA","2014-05-13 11:35:54","2014-05-13 11:35:54"
+8,"Aggregated data involving comb. of codes other then 1,12 or6","2014-05-13 11:35:54","2014-05-13 11:35:54"
+9,"Manufacturer's analytical; partial documentation","2014-05-13 11:35:54","2014-05-13 11:35:54"
+10,"Analytical data from the literature, partial documentation","2014-05-13 11:35:54","2014-05-13 11:35:54"

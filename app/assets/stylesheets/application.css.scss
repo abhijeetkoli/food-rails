@@ -1,0 +1,201 @@
+// Place all the styles related to the application controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+*= require_self
+*= require bootstrap-typeahead-rails
+*/
+
+@import "bootstrap";
+@import "font-awesome";
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-top: 71px;
+  font-size: 1em;   
+  font-family: arial,helvetica;   
+}
+
+body {
+    /*background: url(jo.jpg) no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: whitesmoke; /*#BFA730 #999999; #6C8CD5; #2A4480; #BF8F30*/
+    font-size: 1em;   
+    font-family: arial,helvetica;
+ }
+
+ .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  width: auto;
+  height: 100%;
+ }
+
+.app-wrapper {
+  margin-top: 200px;
+}
+
+.navbar {
+  background-color: #BF8F00;
+  border-color: #BF8F00; /*#FFAA00*/
+}
+
+.navbar-nav {
+
+  padding-top: 0px;
+  padding-right: 20px;
+
+  li {
+    font-style: bold;
+    font-weight: bolder;
+    font-size: medium;
+  }
+
+  li > a:link {
+      color: white;     
+  }
+  
+  li > a:visited {
+        text-decoration: none;
+        color: white;        
+  }
+  
+  li > a:hover {
+    background-color: #FFAA00;    
+    color: white;
+    /*text-decoration: none;
+      border-bottom: #FFAA00;
+      border-width: 0px 0px 1px 0px;
+      border-style: none none dotted none;*/
+  }
+}
+
+.navbar-nav > li > .dropdown-menu {
+  color: #FFAA00;
+
+  li > a:link {
+      color: black;     
+  }
+  
+  li > a:visited {
+        text-decoration: none;
+    color: black;
+  }
+  
+  li > a:hover {
+    background-color: #FFAA00;    
+    color: white;
+    /*text-decoration: none;
+      border-bottom: #FFAA00;
+      border-width: 0px 0px 1px 0px;
+      border-style: none none dotted none;*/
+  }
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #FFAA00;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: transperant;
+  opacity: 0.9;
+  font-size: small;
+
+  a:link {
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:visited {
+        text-decoration: none;
+    color: white;
+  }
+  
+  a:hover { 
+    color: white;
+    text-decoration: none;
+      border-bottom: #FFAA00;
+      border-width: 0px 0px 1px 0px;
+      border-style: none none dotted none;
+  }
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+[type=checkbox] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+[class*=icon-].icon-fixed-width {
+  text-align: left;
+}
+
+.navbar-form {
+  width: 600px; 
+}
+
+.form-inline .form-control, .navbar-form .form-control {
+  width: 100%;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 15px !important;
+}

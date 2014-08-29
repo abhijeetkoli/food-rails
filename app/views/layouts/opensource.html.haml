@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    %title #{@title ? "#{@title} - " : ''}EFR#{defined?(@user) ? " - #{@user.name}" : ''}
+    %link{href: "#{image_path 'logo.png'}", rel: "icon", type: "image/png"}
+    
+    :plain
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    = stylesheet_link_tag    "opensource"
+    = javascript_include_tag "opensource" 
+
+    = javascript_include_tag "//cdn.optimizely.com/js/291430040.js"
+
+    = csrf_meta_tags
+    
+    %meta(property="fb:app_id" content="")
+    %meta(property="og:type"   content="website")
+    %meta(property="og:url"    content="#{request.original_url}")
+    %meta(property="og:title"  content="theefrproject.com")
+    %meta(property="og:description"  content="Efr")
+    %meta(name="title"    content="theefrproject.com")
+    %meta(name="description"    content="Efr")
+    %meta(property="twitter:card" content="summary_large_image")
+    %meta(property="twitter:site" content="EFR")
+    %meta(property="twitter:title" content="theefrproject.com")
+    %meta(property="twitter:description" content="Efr")
+    %meta{property:"image", content: image_path('tlogo.png')}
+    %meta{property:"og:image", content: image_path('logo.png')}
+
+%body
+
+  .container
+    = yield
+
+  %div
+    = yield :custom_javascript

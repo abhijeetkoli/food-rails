@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_id: 1
+  authors: MyText
+  title: MyString
+  year: MyString
+  journal: MyString
+  volume_city: MyString
+  issue_state: MyString
+  start_page: MyString
+  end_page: MyString
+
+two:
+  source_id: 1
+  authors: MyText
+  title: MyString
+  year: MyString
+  journal: MyString
+  volume_city: MyString
+  issue_state: MyString
+  start_page: MyString
+  end_page: MyString
